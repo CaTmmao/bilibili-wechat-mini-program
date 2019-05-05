@@ -1,0 +1,53 @@
+.my-title {
+    display: flex;
+    height: 100rpx;
+    align-items: center;
+    padding: 10rpx;
+    justify-content: center;
+    background: #fff;
+}
+
+.logo {
+    flex: 7;
+}
+
+.logo image {
+    width: 140rpx;
+    height: 60rpx;
+}
+
+.search {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search image {
+    width: 44rpx;
+    height: 44rpx;
+}
+
+.user {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user image {
+    width: 54rpx;
+    height: 60rpx;
+}
+
+.download {
+    flex: 3;
+    color: #fff;
+    background: pink;
+    border-radius: 10rpx;
+    font-size: 30rpx;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10rpx;
+}

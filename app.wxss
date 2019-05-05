@@ -1,0 +1,14 @@
+/* 全局样式 */
+
+
+/* wxss不支持通配符*符号，因此这里单独写各元素 */
+
+page,
+view,
+iamge,
+swiper,
+swiper-item,
+navigator,
+video {
+    box-sizing: border-box;
+}

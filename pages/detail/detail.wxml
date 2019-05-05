@@ -1,0 +1,67 @@
+<view>
+    <!-- 公共头部 -->
+    <my-title></my-title>
+    <!-- 视频详情 -->
+    <view class="videoInfo-container">
+        <!-- 视频 -->
+        <video src="{{videoDetail.videoSrc}}" controls></video>
+        <!-- 视频标题 -->
+        <view class="video-title">
+            <text>{{videoDetail.videoTitle}}</text>
+        </view>
+        <!-- 视频信息 -->
+        <view class="video-detail">
+            <!-- 作者 -->
+            <text class="author">{{videoDetail.author}}</text>
+            <!-- 播放量 -->
+            <text class="play-count">{{videoDetail.playCount}}次观看</text>
+            <!-- 评论量 -->
+            <text class="comment-count">{{videoDetail.commentCount}}弹幕</text>
+            <!-- 时间 -->
+            <text class="date">{{videoDetail.date}}</text>
+        </view>
+    </view>
+    <!-- 评论列表 -->
+    <!-- 评论数 -->
+    <view class="comments-area">
+        <view class="comments-count">评论 {{commentsList.commentTotalCount}}条</view>
+        <!-- 评论列表 -->
+        <view class="comments-list" wx:for="{{commentsList.commentList}}" wx:key="{{index}}">
+            <!-- 左侧头像 -->
+            <view class="comment-image">
+                <image mode="widthFix" src="{{item.userIconSrc}}" />
+            </view>
+            <!-- 右侧评论信息 -->
+            <view class="comment-info-container">
+                <!-- 作者&评论时间 -->
+                <view class="comment-info">
+                    <text class="comment-author">{{item.username}}</text>
+                    <text class="comment-date">{{item.commentDate}}</text>
+                </view>
+                <!-- 评论内容 -->
+                <view class="comment-content-container">
+                    <text class="comment-content">{{item.commentInfo}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!-- 其他推荐视频 -->
+    <view class="other-video" wx:for="{{otherList}}" wx:key="{{index}}">
+        <!-- 左侧图片 -->
+        <view class="other-video-image-container">
+            <image src="{{item.imgSrc}}" mode="widthFix" />
+        </view>
+        <!-- 右侧视频信息 -->
+        <view class="other-video-info-container">
+            <!-- 标题 -->
+            <view class="other-video-title">{{item.title}}</view>
+            <!-- 播放量&弹幕数 -->
+            <view class="other-video-info">
+                <!-- 播放量 -->
+                <text class="play-count">{{item.playMsg}}次观看</text>
+                <!-- 弹幕数 -->
+                <text class="comment-count">{{item.commentCount}}弹幕</text>
+            </view>
+        </view>
+    </view>
+</view>

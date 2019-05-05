@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "哔哩哔哩",
+  "usingComponents": {
+    "my-title": "../../components/myTitle/myTitle"
+  }
+}

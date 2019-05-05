@@ -1,0 +1,130 @@
+page {
+    padding: 10rpx;
+    color: #666;
+}
+
+
+/* 视频 */
+
+.videoInfo-container {
+    margin-top: 10rpx;
+}
+
+.videoInfo-container video {
+    width: 100%;
+}
+
+.video-title {
+    display: flex;
+    justify-content: space-around;
+    font-size: 35rpx;
+}
+
+.video-detail {
+    margin-top: 5rpx;
+    font-size: 28rpx;
+    margin-bottom: 50rpx;
+}
+
+.video-detail text {
+    margin-left: 15rpx;
+}
+
+.video-detail text:first-child {
+    margin-left: 0;
+}
+
+.video-detail .author {
+    color: #000;
+}
+
+
+/* 其他推荐视频 */
+
+.other-video {
+    display: flex;
+    margin-top: 45rpx;
+}
+
+.other-video-image-container {
+    margin-right: 5rpx;
+    width: 38%;
+}
+
+.other-video-image-container image {
+    width: 100%;
+    border-radius: 15rpx;
+}
+
+.other-video-info-container {
+    margin-left: 20rpx;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.other-video-info-container .other-video-title {
+    color: #e06f93;
+    font-size: 30rpx;
+}
+
+.other-video-info {
+    display: flex;
+    align-items: center;
+    color: #666;
+    font-size: 26rpx;
+}
+
+
+/* 评论区域 */
+
+.comments-area {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    margin: 10rpx;
+    padding-left: 30rpx;
+    padding-right: 30rpx;
+}
+
+.comments-count {
+    font-size: 28rpx;
+    margin-bottom: 50rpx;
+}
+
+.comments-list {
+    display: flex;
+    border-bottom: 1px #ddd solid;
+    margin-bottom: 20rpx;
+    padding-bottom: 20rpx;
+}
+
+.comment-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    margin-right: 20rpx;
+}
+
+.comment-image image {
+    width: 90%;
+    border-radius: 50%;
+}
+
+.comment-info-container {
+    flex: 8;
+    display: flex;
+    font-size: 26rpx;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.comment-info {
+    margin-bottom: 20rpx;
+    display: flex;
+    justify-content: space-between;
+}
+
+.comment-content-container {
+    font-size: 30rpx;
+}

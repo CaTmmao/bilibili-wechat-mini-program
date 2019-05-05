@@ -1,0 +1,18 @@
+<view class="my-title">
+    <!-- logo -->
+    <view class="logo">
+        <image src="../../icon/logo2.png" />
+    </view>
+    <!-- 搜索 -->
+    <view class="search">
+        <image src="../../icon/search.png" />
+    </view>
+    <!-- 用户 -->
+    <view class="user">
+        <image src="../../icon/user.png" />
+    </view>
+    <!-- 下载按钮 -->
+    <view class="download">
+        下载 App
+    </view>
+</view>

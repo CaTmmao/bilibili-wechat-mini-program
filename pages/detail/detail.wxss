@@ -43,7 +43,7 @@ page {
 
 .other-video {
     display: flex;
-    margin-top: 45rpx;
+    margin-top: 20rpx;
 }
 
 .other-video-image-container {
